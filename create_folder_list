@@ -1,0 +1,5 @@
+ls -1 "/FILEPATH/Movies" | grep -Fv '.' | while read name; do
+  if [ -d "/FILEPATH/Movies/$name" ]; then
+    echo "$name"
+  fi
+done > folder_list.txt
