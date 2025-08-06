@@ -1,0 +1,3 @@
+while IFS= read -r line; do
+  mkdir -p "/FILEPATH/$line"
+done < Movie_List_With_Years.txt
